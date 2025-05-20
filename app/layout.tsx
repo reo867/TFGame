@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+// import "./globals.css";
 
 const Metadata = ({
     children,
@@ -7,6 +8,7 @@ const Metadata = ({
 }>) => {
     return (
         <>
+        {children}
             <html>
                 <head>
                     <title>TFGame</title>
@@ -15,8 +17,8 @@ const Metadata = ({
                     {/* <link rel="stylesheet" href="/styles/globals.css" /> */}
                 </head>
                 <body>
-                    {children}
                     <div id="app">
+                        {/* {children} */}
                         <p>こんにいてゃ</p>
                     </div>
                 </body>
