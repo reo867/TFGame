@@ -13,10 +13,8 @@ export default function Home() {
       {/* <button onClick={classToggle}></button> */}
     <div className={styles.page}>
       {/* <main className={styles.main}> */}
-      <main className={styles.main}>
-        <table>
           <caption>True or False Game</caption>
-        </table>
+
         <thead>
           <tr>
             <th>
@@ -52,7 +50,6 @@ export default function Home() {
             </th>
           </tr>
         </tfoot>
-      </main>
     </div>
     </div>
   );
