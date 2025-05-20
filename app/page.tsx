@@ -18,7 +18,7 @@ export default function Home() {
         <thead>
           <tr>
             <th>
-              <button onClick={() => setTeam(team)}>
+              <button onClick={() => setTeam(true)}>
                 <span>True</span>
               </button>
             </th>
@@ -26,25 +26,25 @@ export default function Home() {
         </thead>
         <tbody>
           <tr>
-            <Button team/>
-            <Button team/>
-            <Button team/>
+            <Button team={team}/>
+            <Button team={team}/>
+            <Button team={team}/>
           </tr>
           <tr>
-            <Button team/>
-            <Button team/>
-            <Button team/>
+            <Button team={team}/>
+            <Button team={team}/>
+            <Button team={team}/>
           </tr>
           <tr>
-            <Button team/>
-            <Button team/>
-            <Button team/>
+            <Button team={team}/>
+            <Button team={team}/>
+            <Button team={team}/>
           </tr>
         </tbody>
         <tfoot>
           <tr>
             <th>
-              <button onClick={() => setTeam(!team)}>
+              <button onClick={() => setTeam(false)}>
                 <span>False</span>
               </button>
             </th>
