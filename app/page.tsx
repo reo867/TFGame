@@ -13,7 +13,7 @@ export default function Home() {
       {/* <button onClick={classToggle}></button> */}
     <div className={styles.page}>
       {/* <main className={styles.main}> */}
-          <caption>True or False Game</caption>
+          <div>True of False game</div>
 
         <thead>
           <tr>
