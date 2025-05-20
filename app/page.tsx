@@ -22,16 +22,22 @@ export default function Home() {
                 <span>True</span>
               </button>
         
-          
+          <div>
             <Button team={team}/>
             <Button team={team}/>
             <Button team={team}/>
+          </div>
+          <div>
             <Button team={team}/>
             <Button team={team}/>
             <Button team={team}/>
+          </div>
+          <div>
             <Button team={team}/>
             <Button team={team}/>
             <Button team={team}/>
+          </div>
+
 
               <button onClick={() => setTeam(false)}>
                 <span>False</span>
