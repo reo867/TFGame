@@ -19,7 +19,6 @@ const Metadata = ({
                 <body>
                     <div id="app">
                         {/* {children} */}
-                        <p>こんにいてゃ</p>
                     </div>
                 </body>
             </html>

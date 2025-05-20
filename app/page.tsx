@@ -53,7 +53,6 @@ export default function Home() {
             </th>
           </tr>
         </tfoot>
-        <button type="reset">reset</button>
       </main>
     {/* </div> */}
     </div>
