@@ -13,7 +13,7 @@ const Button: FC<ButtonProps> = (team) => {
 
     return (
         <>
-        <td><button className={styles.ground}><div className={team ? styles.maru : styles.batsu}></div></button></td>
+        <button className={styles.ground}><div className={team ? styles.maru : styles.batsu}></div></button>
         </>
     )
 }
