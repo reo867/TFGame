@@ -35,7 +35,7 @@ export default function Home() {
       {/* <button onClick={classToggle}></button> */}
     <div className={styles.page}>
       {/* <main className={styles.main}> */}
-          <div>True of False game</div>
+          <div>まる罰ゲームです！</div>
 
               {/* <button onClick={buttontrue}>
                 <span>True</span>
@@ -44,7 +44,7 @@ export default function Home() {
                 <span>False</span>
               </button> */}
           <p>{namae}の番です！</p>
-          <div>
+          <div className={styles.grid}>
             <Button team={team} changeName={changeName}/>
             <Button team={team} changeName={changeName}/>
             <Button team={team} changeName={changeName}/>

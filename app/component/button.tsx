@@ -31,11 +31,10 @@ const Button = (props:ButtonProps) => {
     // console.log(marubatsu);
       return (
         <>
-          <button className={styles.ground} onClick={shiraberu}>
-            <div>
-                {marubatsu}
-            </div>
+          <button onClick={shiraberu} className={styles.botan}>
+                <span className={styles.tyousei}>{marubatsu}</span>
           </button>
+          
         </>
       );
     };

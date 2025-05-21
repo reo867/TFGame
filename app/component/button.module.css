@@ -1,11 +1,23 @@
-.ground {
+
+.botan:hover {
+    background-color: lightcoral;
+}
+.botan {
   background: gray;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+
   border: 1px solid black;
   cursor: pointer;
   margin: 10px;
-  width:100px;
+  width: 100px;
   height: 100px;
 }
-.ground:hover {
-    background-color: lightcoral;
+.botan:active {
+  background: red;
+}
+.tyousei {
+  margin: 5px;
 }
