@@ -1,21 +1,31 @@
 "use client";
 import { useState } from "react";
-import styles from "../page.module.css";
+import styles from "./button.module.css";
 
 interface ButtonProps {
-  team: boolean;
+  team: boolean | string;
+  changeName?: () => void;
+  // team: str
+  // ing | boolean;
 }
 
-const Button = (team:ButtonProps) => {
+const Button = (team:ButtonProps, changeName:ButtonProps) => {
   // console.log(team);
+  let newValue: string | boolean = "";
     const [marubatsu, setMarubatsu] = useState("");
     const shiraberu = () => {
-      console.log(team);
+      console.log(team.team);
         if (team.team === true) {
-          return setMarubatsu("まる")
+          setMarubatsu("まる")
+          // value = marubatsu;
+          newValue = team.team;
+          return changeName(newValue);
         } else {
           // console.log(team);
-          return setMarubatsu("なし")
+          setMarubatsu("ばつ")
+          // value = marubatsu;
+          newValue = team.team;
+          return changeName(newValue);
         };
     }
     // console.log(marubatsu);

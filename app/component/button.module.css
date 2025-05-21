@@ -1,0 +1,11 @@
+.ground {
+  background: gray;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 10px;
+  width:100px;
+  height: 100px;
+}
+.ground:hover {
+    background-color: lightcoral;
+}
