@@ -3,29 +3,29 @@ import { useState } from "react";
 import styles from "./button.module.css";
 
 interface ButtonProps {
-  team: boolean | string;
-  changeName?: () => void;
+  team: boolean;
+  changeName: (newValue: boolean) => void;
   // team: str
   // ing | boolean;
 }
 
-const Button = (team:ButtonProps, changeName:ButtonProps) => {
+const Button = (props:ButtonProps) => {
   // console.log(team);
   let newValue: string | boolean = "";
     const [marubatsu, setMarubatsu] = useState("");
     const shiraberu = () => {
-      console.log(team.team);
-        if (team.team === true) {
+      console.log(props.team);
+        if (props.team === true) {
           setMarubatsu("まる")
           // value = marubatsu;
-          newValue = team.team;
-          return changeName(newValue);
+          newValue = props.team;
+          return props.changeName(newValue);
         } else {
           // console.log(team);
           setMarubatsu("ばつ")
           // value = marubatsu;
-          newValue = team.team;
-          return changeName(newValue);
+          newValue = props.team;
+          return props.changeName(newValue);
         };
     }
     // console.log(marubatsu);

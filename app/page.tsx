@@ -7,7 +7,7 @@ import Button from "./component/button";
 
 export default function Home() {
   const [team, setTeam] = useState(true);
-  const [namae, setNamae] = useState("player1")
+  const [namae, setNamae] = useState("playerA")
   // cnnst [team2, setTeam2] = useState("");
   // const [marubatsu, setMarubatsu] = useState(true);
   // const buttontrue =() => {
@@ -20,14 +20,14 @@ export default function Home() {
   const changeName = (newValue:boolean) => {
     if (newValue ===true) {
       setTeam(false)
-      setNamae("player1")
+      setNamae("playerB")
 
     } else {
         setTeam(true)
-        setNamae("player2")
+        setNamae("playerA")
       }
     }
-  }
+
 
 
   return (
@@ -45,19 +45,19 @@ export default function Home() {
               </button> */}
           <p>{namae}の番です！</p>
           <div>
-            <Button team={team} changeName={changeName()}/>
-            <Button team={team} changeName={changeName()}/>
-            <Button team={team} changeName={changeName()}/>
+            <Button team={team} changeName={changeName}/>
+            <Button team={team} changeName={changeName}/>
+            <Button team={team} changeName={changeName}/>
           </div>
           <div>
-            <Button team={team} changeName={changeName()}/>
-            <Button team={team} changeName={changeName()}/>
-            <Button team={team} changeName={changeName()}/>
+            <Button team={team} changeName={changeName}/>
+            <Button team={team} changeName={changeName}/>
+            <Button team={team} changeName={changeName}/>
           </div>
           <div>
-            <Button team={team} changeName={}/>
-            <Button team={team} changeName={}/>
-            <Button team={team} changeName={}/>
+            <Button team={team} changeName={changeName}/>
+            <Button team={team} changeName={changeName}/>
+            <Button team={team} changeName={changeName}/>
           </div>
 
 
@@ -67,3 +67,4 @@ export default function Home() {
     </div>
     </div>
   );
+}
