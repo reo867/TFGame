@@ -3,9 +3,20 @@ import styles from "./page.module.css";
 import { useState } from "react";
 import Button from "./component/button";
 
-export default function Home() {
-  const [team, setTeam] = useState(true)
 
+
+
+export default function Home() {
+  const [team, setTeam] = useState(true);
+  // cnnst [team2, setTeam2] = useState("");
+  // const [marubatsu, setMarubatsu] = useState(true);
+  const buttontrue =() => {
+    setTeam(true);
+  }
+  const buttonfalse = () => {
+    setTeam(false);
+    // console.log(team);
+  }
 
 
   return (
@@ -15,34 +26,32 @@ export default function Home() {
       {/* <main className={styles.main}> */}
           <div>True of False game</div>
 
-        
-          
-            
-              <button onClick={() => setTeam(true)}>
+              <button onClick={buttontrue}>
                 <span>True</span>
               </button>
-        
-          <div>
-            <Button team={team}/>
-            <Button team={team}/>
-            <Button team={team}/>
-          </div>
-          <div>
-            <Button team={team}/>
-            <Button team={team}/>
-            <Button team={team}/>
-          </div>
-          <div>
-            <Button team={team}/>
-            <Button team={team}/>
-            <Button team={team}/>
-          </div>
-
-
-              <button onClick={() => setTeam(false)}>
+              <button onClick={buttonfalse}>
                 <span>False</span>
               </button>
+          <div>
+            <Button team={team}/>
+            <Button team={team}/>
+            <Button team={team}/>
+          </div>
+          <div>
+            <Button team={team}/>
+            <Button team={team}/>
+            <Button team={team}/>
+          </div>
+          <div>
+            <Button team={team}/>
+            <Button team={team}/>
+            <Button team={team}/>
+          </div>
 
+
+              {/* <button onClick={() => setTeam(false)}>
+                <span>False</span>
+              </button> */}
     </div>
     </div>
   );
