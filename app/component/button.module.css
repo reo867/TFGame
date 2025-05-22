@@ -4,7 +4,7 @@
 }
 .botan {
   background: gray;
-  padding: 10px;
+  padding: 34px;
   border-radius: 5px;
   border: 1px solid black;
   cursor: pointer;
@@ -19,5 +19,8 @@
   background: red;
 } */
 .tyousei {
-  margin: 5px;
+  /* display: block;
+  height: 30px;
+  padding: 40px; */
+
 }
