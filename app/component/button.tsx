@@ -7,9 +7,9 @@ import { RxCross1 } from "react-icons/rx";
 interface ButtonProps {
   team: boolean;
   changeName: (newValue: boolean) => void;
-  id: number[];
-  decideWin: (win: number[]) => void;
-  decideLose: (lose: number[]) => void;
+  id: number;
+  decideWin: (win: number) => void;
+  decideLose: (lose: number) => void;
 
   // team: str
   // ing | boolean;
@@ -23,14 +23,13 @@ const Button = (props:ButtonProps) => {
     const isButton = useRef(false)
     const [marubatsu, setMarubatsu] = useState<ReactElement>();
     const shiraberu = () => {
-      console.log(props.team);
       // isButton.current = false
         if (props.team === true) {
           setMarubatsu(iconMaru)
           // value = marubatsu;
           newValue = props.team;
           isButton.current = true
-          console.log("こんにちは")
+          // console.log("こんにちは")
           return props.changeName(newValue), props.decideWin(props.id);
         } else {
 
