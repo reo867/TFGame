@@ -7,6 +7,10 @@ import { RxCross1 } from "react-icons/rx";
 interface ButtonProps {
   team: boolean;
   changeName: (newValue: boolean) => void;
+  id: number[];
+  decideWin: (win: number[]) => void;
+  decideLose: (lose: number[]) => void;
+
   // team: str
   // ing | boolean;
 }
@@ -26,7 +30,8 @@ const Button = (props:ButtonProps) => {
           // value = marubatsu;
           newValue = props.team;
           isButton.current = true
-          return props.changeName(newValue);
+          console.log("こんにちは")
+          return props.changeName(newValue), props.decideWin(props.id);
         } else {
 
           // console.log(team);
@@ -34,7 +39,7 @@ const Button = (props:ButtonProps) => {
           isButton.current = true
           // value = marubatsu;
           newValue = props.team;
-          return props.changeName(newValue);
+          return props.changeName(newValue), props.decideLose(props.id);
         };
     }
     // console.log(marubatsu);
@@ -45,6 +50,7 @@ const Button = (props:ButtonProps) => {
                 <span className={styles.tyousei}>{marubatsu}</span>
           </button>
     {/* </IconContext.Provider> */}
+
         </>
       );
     };
