@@ -1,7 +1,9 @@
 name: Hello World on Push
 
-on: workflow_dispatch
-
+on: 
+  push:
+    branches:
+      - main
 
 jobs:
   hello-world-job:
