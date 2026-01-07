@@ -11,3 +11,6 @@ jobs:
     steps:
       - name: Print Hello World
         run: echo "Hello, World!"
+
+      - name: List files in repo
+        run: ls -la
